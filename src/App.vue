@@ -1,59 +1,42 @@
 <template>
-    <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo"
-      mode="horizontal"
-      @select="handleSelect"
-    >
-      <el-menu-item index="1">Processing Center</el-menu-item>
-      <el-sub-menu index="2">
-        <template #title>Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
-        <el-menu-item index="2-2">item two</el-menu-item>
-        <el-menu-item index="2-3">item three</el-menu-item>
-        <el-sub-menu index="2-4">
-          <template #title>item four</template>
-          <el-menu-item index="2-4-1">item one</el-menu-item>
-          <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
-        </el-sub-menu>
-      </el-sub-menu>
-      <el-menu-item index="3" disabled>Info</el-menu-item>
-      <el-menu-item index="4">Orders</el-menu-item>
-    </el-menu>
-    <div class="h-6" />
-  
-
-<section id="servicios">
-<h3 class="titulo-seccion">LA PAPA EN EL TOLIMA.</h3>
-<div class="fila">
-    <div class="servicio">
-        <h4>INTRODUCCIÓN</h4>
-        <hr>
-        <p>La papa en el Tolima
-            La papa es un cultivo de gran relevancia en el departamento del Tolima, Colombia. Está región Andina,  conocida por su diversidad de micro climas y suelos fértiles, ofrece condiciones ideales para el cultivo de papa, un alimento básico y valioso en la dieta colombiana.
-            La papa no es solo crucial para la seguridad alimentaria local, sino que también desempeña un papel significativo en la economía y la cultura del Tolima</p>
-    </div>
-</div>
-</section>
-<section id="servicios">
-<h3>IMAGENES DE LA PAPA</h3>
-    <el-carousel :interval="4000" type="card" height="200px">
-      <el-carousel-item v-for="item in 6" :key="item">
-        <h3 text="2xl" justify="center">{{ item }}</h3>
-      </el-carousel-item>
-    </el-carousel>
-  
-</section>
+  <el-menu
+    :default-active="activeIndex"
+    class="el-menu-demo"
+    mode="horizontal"
+    @select="handleSelect"
+  >
+    <el-menu-item index="1" @click="goTo('/')">INTRODUCCIÓN</el-menu-item>
+    <el-sub-menu index="2">
+      <template #title>Secciones</template>
+      <el-menu-item index="2-1" @click="goTo('/imagenes')">IMÁGENES DE LA PAPA</el-menu-item>
+      <el-menu-item index="2-2" @click="goTo('/historia')">HISTORIA</el-menu-item>
+      <el-menu-item index="2-3" @click="goTo('/turismo')">TURISMO</el-menu-item>
+    </el-sub-menu>
+  </el-menu>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      activeIndex: '1',
+    }
+  },
+  methods: {
+    goTo(path) {
+      this.$router.push(path)
+    },
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
+  }
+}
 </script>
+
 
 <style>
 body {
-background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./assets/111.jpg");
+background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./assets/fondomain.jpg");
 width: 100%;
 }
 #servicios {
