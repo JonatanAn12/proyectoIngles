@@ -1,30 +1,52 @@
 <template>
-  <el-menu
-    :default-active="activeIndex"
-    class="el-menu-demo"
-    mode="horizontal"
-    @select="handleSelect"
-  >
-    <el-menu-item index="1" @click="goTo('/')">INTRODUCCIÓN</el-menu-item>
-    <el-sub-menu index="2">
-      <template #title>Secciones</template>
-      <el-menu-item index="2-1" @click="goTo('/imagenes')">IMÁGENES DE LA PAPA</el-menu-item>
-      <el-menu-item index="2-2" @click="goTo('/historia')">HISTORIA</el-menu-item>
-      <el-menu-item index="2-3" @click="goTo('/turismo')">TURISMO</el-menu-item>
-    </el-sub-menu>
-  </el-menu>
+  <div>
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+    >
+      <el-menu-item index="1" @click="goTo('/')">INTRODUCCIÓN</el-menu-item>
+      <el-sub-menu index="2">
+        <template #title>Secciones</template>
+        <el-menu-item index="2-1" @click="goTo('/imagenes')">IMÁGENES DE LA PAPA</el-menu-item>
+        <el-menu-item index="2-2" @click="goTo('/historia')">HISTORIA</el-menu-item>
+        <el-menu-item index="2-3" @click="goTo('/turismo')">TURISMO</el-menu-item>
+        <el-menu-item index="2-4" @click="goTo('/comidas')">COMIDAS TIPICAS</el-menu-item>
+      </el-sub-menu>
+    </el-menu>
+    <router-view></router-view>
+    <section id="servicios">
+      <h3 class="titulo-seccion">INTRODUCTION</h3>
+      <div class="fila">
+          <div class="servicio">
+              <h4>Desarrollo al lado del Servidor</h4>
+              <hr>
+              <p>Desarrollo de software al lado del servidor usando el lenguaje de java,
+                  junto a la frameweork, springboot para crear aplicaciones web de manera 
+                  rapido y efectiva.</p>
+          </div>
+      </div>
+  </section>
+  </div>
 </template>
+
 
 <script>
 export default {
   data() {
     return {
-      activeIndex: '1',
+      activeIndex: this.$route.path,
+    };
+  },
+  watch: {
+    '$route.path'(newPath) {
+      this.activeIndex = newPath;
     }
   },
   methods: {
     goTo(path) {
-      this.$router.push(path)
+      this.$router.push(path);
     },
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
@@ -36,7 +58,7 @@ export default {
 
 <style>
 body {
-background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./assets/fondomain.jpg");
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./assets/fondomain.jpg");
 width: 100%;
 }
 #servicios {

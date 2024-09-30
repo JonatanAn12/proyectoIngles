@@ -1,20 +1,39 @@
 <template>
-    <section id="servicios">
-        <h3>IMAGENES DE LA PAPA</h3>
-            <el-carousel :interval="4000" type="card" height="200px">
-              <el-carousel-item v-for="item in 6" :key="item">
-                <h3 text="2xl" justify="center">{{ item }}</h3>
-              </el-carousel-item>
-            </el-carousel>
-          
-        </section>
+  <section id="servicios">
+    <h3>IMÁGENES DE LA PAPA</h3>
+    <el-carousel :interval="4000" type="card" height="200px">
+      <el-carousel-item v-for="image in images" :key="image">
+        <img :src="image" alt="Imagen de la papa" />
+      </el-carousel-item>
+    </el-carousel>
+  </section>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      images: [
+        './src/assets/111.jpg',
+        './src/assets/fondomain.jpg',
+        './assets/papa3.jpg',
+      ]
+    };
+  }
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h3 {
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 </style>
