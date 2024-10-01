@@ -36,6 +36,7 @@
     color: #111135;
     display: flex;
     justify-content: center;
+    transition: .5s;
   }
   
   #contenido2 .contenido2 {
@@ -76,4 +77,9 @@
     color: #565656;
     margin-bottom: 15px;
   }
+
+  #contenido2:hover {
+    box-shadow: 5px 5px 10px #1beb00fb, -5px -5px 10px #f0f0f0;
+    
+    }
   </style>
