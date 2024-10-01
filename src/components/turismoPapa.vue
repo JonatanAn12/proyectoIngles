@@ -6,6 +6,9 @@
   
   <script>
   export default {
-    name: 'HistoriaPapa',
+    name: 'turismoPaapa',
   };
   </script>
+  <style scoped>
+  
+  </style>
