@@ -4,6 +4,7 @@ import historiaPapa from './components/historiaPapa.vue';
 import turismoPapa from './components/turismoPapa.vue';
 import comidasTipicas from './components/comidasTipicas.vue';
 import introduccionPapa from './components/introduccionPapa.vue';
+import quizz from './components/quizz.vue';
 
 const routes = [
   { path: '/introduccion', component: introduccionPapa },
@@ -11,6 +12,7 @@ const routes = [
   { path: '/historia', component: historiaPapa },
   { path: '/turismo', component: turismoPapa },
   {path: '/comidas', component: comidasTipicas },
+  {path: '/evaluacion', component: quizz },
 ];
 
 const router = createRouter({

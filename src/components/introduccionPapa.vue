@@ -1,11 +1,12 @@
 <template>
   <section id="servicios">
-    <h3 class="titulo-seccion">INTRODUCCIÓN</h3>
+    <h3 class="titulo-seccion">INTRODUCTION</h3>
     <div class="fila">
       <div class="servicio">
-        <h4>INTRODUCCION ACERCA DEL TRABAJO</h4>
+        <h4>THE PAPA IN THE TOLIMA</h4>
         <hr />
-        <p>Desarrollo de software al lado del servidor usando el lenguaje de Java junto a Springboot para crear aplicaciones web rápidas y efectivas.</p>
+        <p>The potato is a crop of great importance in the department of Tolima, Colombia. This Andean region, known for its diversity of microclimates and fertile soils, offers ideal conditions for growing potatoes, a valuable staple in the Colombian diet.
+          Potatoes are not only crucial for local food security, but also play a significant role in Tolima's economy and culture.</p>
       </div>
     </div>
   </section>

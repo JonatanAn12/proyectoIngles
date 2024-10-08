@@ -14,6 +14,7 @@
         <el-menu-item index="2-3" @click="goTo('/turismo')">TURISMO</el-menu-item>
         <el-menu-item index="2-4" @click="goTo('/comidas')">COMIDAS TIPICAS</el-menu-item>
         <el-menu-item index="2-5" @click="goTo('/introduccion')">INTRODUCCION</el-menu-item>
+        <el-menu-item index="2-6" @click="goTo('/evaluacion')">Quizz</el-menu-item>
       </el-sub-menu>
     </el-menu>
     <router-view></router-view>

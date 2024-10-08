@@ -2,20 +2,13 @@
   <section id="contenido2">
     <div class="contenido2">
       <div class="tituloa">
-        <p class="titulo-seccion">¿Como surgio la papa en el tolima? </p>
-        <h2>La papa en el <span>Tolima</span> surgio...</h2>
+        <p class="titulo-seccion">Where did the potato originate?</p>
+        <h2>THE PAPA IN THE <span>TOLIMA</span> AROSE...</h2>
         <br>
-        <p>Bootstrap establece estilos básicos de visualización, tipografía y enlaces globales. Cuando se necesita más control, consulta las clases de utilidades textuales.
-          Utiliza una pila de fuentes nativas que seleccione la mejor font-family para cada sistema operativo y dispositivo.
-          Para una escala de tipos más inclusiva y accesible, utilizamos el font-size raíz predeterminado del navegador (normalmente 16x) 
-          para que los visitantes puedan personalizar los valores predeterminados de su navegador según sea necesario.
-          Usa los atributos $font-family-base, $font-size-base y $line-height-base como nuestra base tipográfica aplicada al <strong>"body"</strong>
-          Establece el color global de enlaces a través de $link-color.
-          Usa $body-bg para establecer un background-color en <strong>"body"</strong> (#fff por defecto).
-          Estos estilos se pueden encontrar dentro de _reboot.scss, y las variables globales se definen en _variables.scss. Asegúrate de configurar $font-size-base en rem.</p>
+        <p>The history of the potato dates back to 3,400 to 2,200 B.C., when the indigenous people of the Andean region discovered it and began cultivating its plant. After a few years, with the development of these communities, it became popular and its production increased as a food source. Little by little, they discovered that there were more varieties of potatoes, very different from the "original" ones, so they expanded their cultivation and, in turn, their consumption, becoming their main source of sustenance.</p>
         </div>
           <br>
-          <h6>A continuación le mostraremos ejemplos y usos</h6>
+          <h6>A continuación le mostraremos imagenes</h6>
           
     <br>  
     </div>
