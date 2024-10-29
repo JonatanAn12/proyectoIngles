@@ -3,49 +3,49 @@
       <h3 class="titulo-seccion">Preguntas</h3>
       <div class="contenedor-form">
         <form @submit.prevent="submitForm">
-          <h4>1). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>1). Nombre completo</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta1" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta1" placeholder="Ingrese nombre completo" class="input-full">
           </div>
   
-          <h4>2). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>2). apellidos completos</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta2" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta2" placeholder="Ingrese apellidos completos" class="input-full">
           </div>
   
-          <h4>3). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>3). numero de ficha </h4>
           <div class="fila">
-            <input type="text" v-model="respuesta3" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta3" placeholder="Ingrese numero de ficha" class="input-full">
           </div>
   
-          <h4>4). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>4). nombre de la formación</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta4" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta4" placeholder="ingrese nombre de la formación" class="input-full">
           </div>
   
-          <h4>5). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>5). nombre un sitio turistico de la papa.</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta5" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta5" placeholder="pregunta 1..." class="input-full">
           </div>
   
-          <h4>6). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>6). cuantas imagenes hay en la pagina.</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta6" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta6" placeholder="pregunta 2..." class="input-full">
           </div>
   
-          <h4>7). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>7). ¿Donde se originó la papa?</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta7" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta7" placeholder="pregunta 3..." class="input-full">
           </div>
   
-          <h4>8). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>8). ¿Cuantas recetas de la papa hay en la página?</h4>
           <div class="fila">
-            <input type="text" v-model="respuesta8" placeholder="Tema..." class="input-full">
+            <input type="text" v-model="respuesta8" placeholder="pregunta 4..." class="input-full">
           </div>
   
-          <h4>9). ¿josjef eofijoaeijf oiej foaif iea</h4>
+          <h4>9). ¿Que te parecio la aplicacion y en que se podria mejorar?</h4>
           <div class="fila">
-            <textarea v-model="respuesta9" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+            <textarea v-model="respuesta9" cols="30" rows="10" placeholder="Deja tu comentario..." class="input-full"></textarea>
           </div>
   
           <input type="submit" value="Enviar mensaje" class="btn-enviar">
